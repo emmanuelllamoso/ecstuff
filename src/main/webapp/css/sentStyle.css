@@ -1,0 +1,42 @@
+.messageSummary{
+    
+    text-align: left;
+    display: inline-block;
+    background-color: hsla(150, 100%, 89%, 0.87);
+    width: auto;
+    margin: 20%;
+    margin-top: 10%;
+    min-width: 700px;
+    border-radius: 10px;
+}
+.messageSummary h2{
+    margin-bottom: 20px;
+
+}
+.messageSummary .smsTextBox{
+    margin:40px; 
+    display: block;
+    
+}
+.messageSummary .smsTextBox #img-status{
+    width: 20px;
+    
+}
+.messageSummary a{
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: hsla(150, 100%, 89%, 0.87);
+    color: rgb(55, 36, 65);
+    border: 2px solid greenyellow;
+    border-radius: 10px;
+    padding: 5px;
+    
+}
+.messageSummary a:hover{
+    background-color: rgb(252, 119, 43);
+    color: hsla(150, 100%, 89%, 0.87);
+    
+}
+.footer{
+    margin-top: -150px;
+}

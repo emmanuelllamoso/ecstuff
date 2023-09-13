@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(#fdf3f3,#7FB9F0)
+}
+.header{
+    width: 100%;
+    padding: 0 10%;
+}
+nav{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+nav img{
+    width: 200px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 90px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(73, 73, 70);
+    font-size: 1.2em;
+}
+.box1{
+    border: 1px solid #85ddf3;
+    width: 800px;
+    margin: 20%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border-radius: 10px;
+    background-color: hsla(150, 73%, 68%, 0.87);
+}
+.box1 h3{
+    margin: 10px 20px;
+}
+.box1 #intruction{
+    margin-left: 100px;
+}
+.text-box{
+    margin-top: 50px
+}
+.text-box h1{
+    font-size: 45px;
+    color:rgb(48, 48, 48); 
+}
+.text-box p{
+    font-size: 20px;
+}
+.smsTextBox{
+    margin-left: 10%;
+    width: 800px;
+    text-align: left;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+#labelPhone{
+    display: block; 
+    margin: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+}
+#phone{
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    width: 50px;
+    height: 30px;
+    text-align: left;
+    min-width: 200px;
+    padding-left:5px;
+}
+#labelMessage{
+    display: block; 
+    margin: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+}
+#message{
+    font-size: 1.5em;
+    width: auto;
+    height: 7.1em;
+    text-align: left;
+    min-width: 300px;
+    outline: none;
+    resize: none;
+    border: 2px salmon;
+    padding: 10px;
+    color:rgb(17, 17, 17);
+    line-height: 1.4;
+    border-radius: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+h2{
+    float: initial;
+}
+#noteSms{
+    margin:0px;
+}  
+#submit{
+    margin-top: 10px;
+    margin-left: 50%;
+    width: 150px;
+    height: 30px;
+    background-color: hsl(0, 16%, 86%);
+    font-size: larger;
+}
+#submit:hover{
+    background-color: hsl(199, 82%, 63%);
+}
+
+.footer{
+    margin-top: 150px;
+    width: 100%;
+    padding: 100px 5%;
+    background: #383838;
+    color: #d8d8d8;
+    display: flex;
+}
+.footer div{
+    text-align: center;
+    
+}
+.footer div h3{
+    font-weight: 300;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+form input{
+    width:300px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    outline: none;
+    border: none;
+    color:rgb(94, 79, 79);
+    font-size: 1.2em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+form #feedback{
+    margin-left: 50px;
+    margin-bottom: 20px;
+    width: 350px;
+    height: 120px;
+    resize: none;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    color:rgb(94, 79, 79);
+    font-size: 1.2em;
+    padding: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+form button{
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 30px;
+}
+.footer .col-1{
+    margin-right: 50%;
+}
+form button:hover{
+    background-color: #fff;
+    color: #333333;
+    font-weight: bolder;
+}
+.social-icons{
+    margin-top: 20px;
+}
+.social-icons a i{
+    font-size: 22px;
+    margin: 10px;
+    cursor: pointer;
+    color: #fff;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>getSMSController</servlet-name>
+  	<display-name>getSMSController</display-name>
+  	<description></description>
+  	<servlet-class>com.AllTextPh.getSMSController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>getSMSControl</servlet-name>
+  	<display-name>getSMSControl</display-name>
+  	<description></description>
+  	<servlet-class>com.AllTextPh.getSMSController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>SMS</servlet-name>
+  	<display-name>SMS</display-name>
+  	<description></description>
+  	<servlet-class>com.AllTextPh.SMS</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>feedbackServlet</servlet-name>
+  	<display-name>feedbackServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.feedback.feedbackServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>getSMSController</servlet-name>
+  	<url-pattern>/getSMSController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>getSMSControl</servlet-name>
+  	<url-pattern>/getSMSControl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>SMS</servlet-name>
+  	<url-pattern>/SMS</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>feedbackServlet</servlet-name>
+  	<url-pattern>/feedbackServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
