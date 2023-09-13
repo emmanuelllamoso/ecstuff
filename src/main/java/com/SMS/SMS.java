@@ -24,8 +24,8 @@ public class SMS {
 	private String sms;
 	private String messageId; 
 	
-	public static final String ACCOUNT_SID = "AC489b1ba5f8de3366d43be2308a4a39cc";
-	public static final String AUTH_TOKEN = "13cfec964010a4d62a41fcdff0d03a1f";
+	public static final String ACCOUNT_SID = "ACxxx";
+	public static final String AUTH_TOKEN = "xxxx";
 
 	
 	public String getNumber() {
