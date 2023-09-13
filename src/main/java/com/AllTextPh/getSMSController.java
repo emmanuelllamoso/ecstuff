@@ -46,12 +46,7 @@ public class getSMSController extends HttpServlet {
 			RequestDispatcher rd = request.getRequestDispatcher("sent.jsp"); 
 			rd.forward(request, response);
 			
-			if(sms.checkBalance()==balance) {
-				System.out.print("not sent!");
-			}
-			else {
-				System.out.print("Sent!");
-			}
+			System.out.print((sms.checkBalance()==balance) ? "notsent" : "sent");   
 			
 		}
 		else if(balance<0.1699) {
