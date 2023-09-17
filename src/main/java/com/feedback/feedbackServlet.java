@@ -21,9 +21,6 @@ public class feedbackServlet extends HttpServlet {
 		String referer = request.getHeader("referer");
 		
 		SMSdao dao = new SMSdao(); 
-		dao.connectJDBS(); 
-		
-		
 		
 		if(email.isBlank() || concern.isBlank()) {
 			

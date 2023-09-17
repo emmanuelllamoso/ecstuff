@@ -27,19 +27,15 @@ public class getSMSController extends HttpServlet {
 		SMS sms = new SMS(); 
 		sms.setNumber(phone);
 		sms.setSms(message);
+		
 		double balance = sms.checkBalance(); 
 		
 		SMSdao dao = new SMSdao(); 
-		boolean connectedDb = dao.connectJDBS(); 
-		
 		PrintWriter out = response.getWriter();
 		
-		if(connectedDb && balance>TextPrice) {
-			
+		if(balance>TextPrice) {
 			sms.sendSMS();
-			
 			dao.storeSMS(sms.getMessageId(), phone, message);
-			
 			request.setAttribute("message", message);
 			request.setAttribute("phone", phone);
 			
@@ -49,7 +45,7 @@ public class getSMSController extends HttpServlet {
 			System.out.print((sms.checkBalance()==balance) ? "notsent" : "sent");   
 			
 		}
-		else if(balance<0.1699) {
+		else if(balance<TextPrice) {
 			System.out.print("Insufficient load balance!\n" + "Balance: "+balance);
 			out.print("Error!!");
 		}
