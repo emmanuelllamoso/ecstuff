@@ -19,15 +19,10 @@ public class SMSdao {
 	String password = "Emman12pogi"; 
 	Connection con; 
 	
-	public boolean connectJDBS(){
-		
+	public SMSdao(){
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			con= DriverManager.getConnection(url,username, password); 
-			
-			if(con.isClosed()) {
-				return true; 
-			}; 
+			con= DriverManager.getConnection(url,username, password);  
 			
 			System.out.print(con.toString());			
 		} catch (ClassNotFoundException e) {
@@ -37,9 +32,6 @@ public class SMSdao {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-		return true; 
-		
 	}
 	public void storeSMS(String messageId, String phone, String message) {
 		PreparedStatement st;
