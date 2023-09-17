@@ -24,13 +24,10 @@ public class SMS {
 	private String sms;
 	private String messageId; 
 	
-<<<<<<< HEAD
-	public static final String ACCOUNT_SID = "ACxxx";
+
+	public static final String ACCOUNT_SID = "xxxx";
 	public static final String AUTH_TOKEN = "xxxx";
-=======
-	public static final String ACCOUNT_SID = "AC489b1ba5f8de3366d43be2308a4a39cc";
-	public static final String AUTH_TOKEN = "db9b6d65f8246df0097750d4f27d3bda";
->>>>>>> main
+
 
 	
 	public String getNumber() {
